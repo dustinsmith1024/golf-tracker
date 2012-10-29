@@ -1,0 +1,184 @@
+html, body
+	height: 100%
+	background: #EEE
+
+body
+	height: 448px
+	width: 320px
+	color: #333
+	background: #FFF
+	padding: 0
+	margin: 0
+	top: 0
+	position: absolute
+
+a, a:hover
+	text-decoration: none
+
+.top-nav-wrapper
+	width: 320px
+	position: fixed
+	left: 0
+	top: 0
+	height: 50px
+	vertical-align: middle
+	line-height: 50px
+	text-align: center
+	font-size: 12px
+	border: 1px solid 		#456f9a /*{b-bar-border}*/
+	background: 			#5e87b0 /*{b-bar-background-color}*/
+	color: 					#fff /*{b-bar-color}*/
+	font-weight: bold
+	text-shadow: 0 /*{b-bar-shadow-x}*/ 1px /*{b-bar-shadow-y}*/ 1px /*{b-bar-shadow-radius}*/ #3e6790 /*{b-bar-shadow-color}*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #6facd5 /*{b-bar-background-start}*/), to( #497bae /*{b-bar-background-end}*/)) /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #6facd5 /*{b-bar-background-start}*/, #497bae /*{b-bar-background-end}*/) /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #6facd5 /*{b-bar-background-start}*/, #497bae /*{b-bar-background-end}*/) /* FF3.6 */
+	background-image:     -ms-linear-gradient( #6facd5 /*{b-bar-background-start}*/, #497bae /*{b-bar-background-end}*/) /* IE10 */
+	background-image:      -o-linear-gradient( #6facd5 /*{b-bar-background-start}*/, #497bae /*{b-bar-background-end}*/) /* Opera 11.10+ */
+	background-image:         linear-gradient( #6facd5 /*{b-bar-background-start}*/, #497bae /*{b-bar-background-end}*/)
+
+.top-nav
+	.back
+		position: fixed
+		top: 10px
+		left: 10px
+		height: 30px
+		line-height: 30px
+		border: 1px solid lightGray
+		border-radius: 10px
+		width: 70px
+		color: lightGray
+		.icon-chevron-left
+			font-size: 16px
+			position: relative
+			float: left
+			margin-left: 10px
+
+.recent-rounds
+	font-size: 16px
+
+nav h1
+	margin: 0
+	padding: 0
+
+.main-content-wrapper
+	width: 320px
+	height: 348px
+	position: fixed
+	top: 50px
+	overflow: scroll
+
+.bottom-nav-wrapper
+	width: 320px
+	position: fixed
+	left: 0
+	top: 398px // 548 - 50 = 
+	height: 50px
+	text-align: center
+	background-color: #333
+
+.bottom-nav 
+	font-size: 12px
+	div
+		width:  105px //320 / 3 - 3
+		float: left
+		color: white
+		border-left: 1px solid gray
+		padding-top: 5px
+		height: 45px
+		a
+			color: white
+		i
+			display: block
+			font-size: 20px
+
+img.avatar
+	line-height: 50px
+	height: 50px
+	vertical-align: middle
+
+.avatar 
+	line-height: 50px
+	border-bottom: none
+	img
+		vertical-align: middle
+		width: 50px
+		border-radius: 5px
+		border: 1px solid lightGray
+
+.previous-round span
+	display: block
+	line-height: 12px
+
+.iphone-list
+	margin: 10px
+	padding: 0px
+	background-color: lightGray
+	font-size: 12px
+	border-radius: 5px
+	li
+		padding: 10px
+		margin: 0
+		list-style-type: none
+	a, a:visited
+		color: #333
+
+.iphone-list-item
+	border: 1px solid 		#ccc /*{c-bup-border}*/
+	background: 			#eee /*{c-bup-background-color}*/
+	font-weight: bold
+	color: 					#222 /*{c-bup-color}*/
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #fff /*{c-bup-shadow-color}*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #fff /*{c-bup-background-start}*/), to( #f1f1f1 /*{c-bup-background-end}*/)) /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #fff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/) /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #fff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/) /* FF3.6 */
+	background-image:     -ms-linear-gradient( #fff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/) /* IE10 */
+	background-image:      -o-linear-gradient( #fff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/) /* Opera 11.10+ */
+	background-image:         linear-gradient( #fff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/)
+
+.new-round
+	line-height: 20px
+	vertical-align: middle
+	.icon-flag
+		font-size: 20px
+		margin-right: 10px
+.first-item
+	border-radius: 5px 5px 0 0
+
+.last-item
+	border-radius: 0 0 5px 5px
+
+.only-item
+	border-radius: 5px
+
+.right-arrow
+	color: gray
+	float: right
+	margin-right: 15px
+
+.stats
+	margin: 5px 0 0 0
+	padding: 0
+	li
+		padding: 0
+		margin: 0
+		height: 20px
+
+.bad-score
+	color: red
+	display: inline
+
+.good-score
+	color: green
+	display: inline
+
+.score
+	position: absolute
+	right: 20px
+	top: 20px
+	font-size: 50px
+	span
+		display: block
+		font-size: 15px
+		text-align:	center
+		margin-top: 0
